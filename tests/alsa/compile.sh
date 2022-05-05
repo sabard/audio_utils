@@ -1,0 +1,1 @@
+gcc pcm_min.c -lasound -o pcm_min
