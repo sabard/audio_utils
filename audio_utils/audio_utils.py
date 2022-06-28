@@ -79,9 +79,8 @@ def create_audio_dataset(
     song_names = []
     songs = []
     break_outer = False
-    for root, dirs, files in (
-        dir_iterator := tqdm(os.walk(dataset_path), leave=False)
-    ):
+    dir_iterator = tqdm(os.walk(dataset_path), leave=False)
+    for root, dirs, files in dir_iterator:
         if break_outer:
             dir_iterator.close()
             break

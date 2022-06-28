@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='audio_utils',
-    version='0.0.1',
+    version='0.0.3',
     license='MIT,',
     description='Template for creating generic Python packages',
     long_description=long_description,
